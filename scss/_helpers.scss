@@ -1,0 +1,316 @@
+@use "./variables" as *;
+
+$breakpoints: (
+  "sm": $sm,
+  "md": $md,
+  "lg": $lg,
+  "xl": $xl,
+);
+
+/*
+################################
+||                            ||
+||          Display           ||
+||                            ||
+################################
+*/
+
+$displays: (
+  block,
+  inline,
+  inline-block,
+  flex,
+  inline-flex,
+  grid,
+  inline-grid,
+  none
+);
+
+@each $display in $displays {
+  .d-#{$display} {
+    display: $display !important;
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: $width) {
+    @each $display in $displays {
+      .d-#{$breakpoint}-#{$display} {
+        display: $display !important;
+      }
+    }
+  }
+}
+
+/*
+################################
+||                            ||
+||          Flexbox           ||
+||                            ||
+################################
+*/
+
+$flexbox: (
+  "flex-direction": (
+    row,
+    row-reverse,
+    column,
+    column-reverse,
+  ),
+  "flex-wrap": (
+    wrap,
+    nowrap,
+    wrap-reverse,
+  ),
+  "justify-content": (
+    center,
+    flex-start,
+    flex-end,
+    space-between,
+    space-evenly,
+    space-around,
+  ),
+  "align-items": (
+    center,
+    flex-start,
+    flex-end,
+    stretch,
+    baseline,
+  ),
+  "align-content": (
+    center,
+    flex-start,
+    flex-end,
+    stretch,
+    space-between,
+    space-around,
+  ),
+  "align-self": (
+    center,
+    flex-start,
+    flex-end,
+    stretch,
+    baseline,
+    auto,
+  ),
+);
+
+@each $class, $values in $flexbox {
+  @each $value in $values {
+    .#{$class}-#{$value} {
+      #{$class}: $value !important;
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: $width) {
+    @each $class, $values in $flexbox {
+      @each $value in $values {
+        .#{$breakpoint}-#{$class}-#{$value} {
+          #{$class}: $value !important;
+        }
+      }
+    }
+  }
+}
+
+// order
+@for $i from -1 through 5 {
+  .order-#{$i} {
+    order: $i !important;
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: $width) {
+    @for $i from -1 through 5 {
+      .order-#{$breakpoint}-#{$i} {
+        order: $i !important;
+      }
+    }
+  }
+}
+
+/*
+################################
+||                            ||
+||          Spacing           ||
+||                            ||
+################################
+*/
+$spaces: (
+  "m": "margin",
+  "mt": "margin-top",
+  "mb": "margin-bottom",
+  "ml": "margin-left",
+  "mr": "margin-right",
+  "mx": "margin",
+  "my": "margin",
+  "p": "padding",
+  "pt": "padding-top",
+  "pb": "padding-bottom",
+  "pl": "padding-left",
+  "pr": "padding-right",
+  "px": "padding",
+  "py": "padding",
+);
+
+@each $class, $property in $spaces {
+  @for $i from 0 through 30 {
+    @if $class == "mx" {
+      .#{$class}-#{$i} {
+        #{$property}: 0 #{calc($i / 10) + rem} !important;
+      }
+    } @else if $class == "my" {
+      .#{$class}-#{$i} {
+        #{$property}: #{calc($i / 10) + rem} 0 !important;
+      }
+    } @else if $class == "px" {
+      .#{$class}-#{$i} {
+        #{$property}: 0 #{calc($i / 10) + rem} !important;
+      }
+    } @else if $class == "py" {
+      .#{$class}-#{$i} {
+        #{$property}: #{calc($i / 10) + rem} 0 !important;
+      }
+    } @else {
+      .#{$class}-#{$i} {
+        #{$property}: #{calc($i / 10) + rem} !important;
+      }
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: $width) {
+    @each $class, $property in $spaces {
+      @for $i from 0 through 30 {
+        @if $class == "mx" {
+          .#{$breakpoint}-#{$class}-#{$i} {
+            #{$property}: 0 #{calc($i / 10) + rem} !important;
+          }
+        } @else if $class == "my" {
+          .#{$breakpoint}-#{$class}-#{$i} {
+            #{$property}: #{calc($i / 10) + rem} 0 !important;
+          }
+        } @else if $class == "px" {
+          .#{$breakpoint}-#{$class}-#{$i} {
+            #{$property}: 0 #{calc($i / 10) + rem} !important;
+          }
+        } @else if $class == "py" {
+          .#{$breakpoint}-#{$class}-#{$i} {
+            #{$property}: #{calc($i / 10) + rem} 0 !important;
+          }
+        } @else {
+          .#{$breakpoint}-#{$class}-#{$i} {
+            #{$property}: #{calc($i / 10) + rem} !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $class, $property in $spaces {
+  @if $class == "mx" {
+    .#{$class}-auto {
+      #{$property}: 0 auto !important;
+    }
+  } @else if $class == "my" {
+    .#{$class}-auto {
+      #{$property}: auto 0 !important;
+    }
+  } @else if $class == "px" {
+    .#{$class}-auto {
+      #{$property}: 0 auto !important;
+    }
+  } @else if $class == "py" {
+    .#{$class}-auto {
+      #{$property}: auto 0 !important;
+    }
+  } @else {
+    .#{$class}-auto {
+      #{$property}: auto !important;
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: $width) {
+    @each $class, $property in $spaces {
+      @if $class == "mx" {
+        .#{$breakpoint}-#{$class}-auto {
+          #{$property}: 0 auto !important;
+        }
+      } @else if $class == "my" {
+        .#{$breakpoint}-#{$class}-auto {
+          #{$property}: auto 0 !important;
+        }
+      } @else if $class == "px" {
+        .#{$breakpoint}-#{$class}-auto {
+          #{$property}: 0 auto !important;
+        }
+      } @else if $class == "py" {
+        .#{$breakpoint}-#{$class}-auto {
+          #{$property}: auto 0 !important;
+        }
+      } @else {
+        .#{$breakpoint}-#{$class}-auto {
+          #{$property}: auto !important;
+        }
+      }
+    }
+  }
+}
+
+/*
+################################
+||                            ||
+||            Text            ||
+||                            ||
+################################
+*/
+$text: (
+  "text-align": (
+    start,
+    end,
+    left,
+    right,
+    center,
+  ),
+  "text-transform": (
+    none,
+    uppercase,
+    lowercase,
+    capitalize,
+  ),
+  "text-wrap": (
+    wrap,
+    nowrap,
+  ),
+  "word-wrap": (
+    break-word,
+    normal,
+  ),
+);
+
+@each $class, $values in $text {
+  @each $value in $values {
+    .#{$class}-#{$value} {
+      #{$class}: $value !important;
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: $width) {
+    @each $class, $values in $text {
+      @each $value in $values {
+        .#{$breakpoint}-#{$class}-#{$value} {
+          #{$class}: $value !important;
+        }
+      }
+    }
+  }
+}

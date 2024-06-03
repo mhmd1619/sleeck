@@ -1,0 +1,98 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.container-full {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+@include screen-sm {
+  .container-sm,
+  .container {
+    max-width: $container-sm;
+  }
+}
+@include screen-md {
+  .container-sm,
+  .container-md,
+  .container {
+    max-width: $container-md;
+  }
+}
+@include screen-lg {
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container {
+    max-width: $container-lg;
+  }
+}
+@include screen-xl {
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container {
+    max-width: $container-xl;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  & > * {
+    display: flex;
+    flex: 1 0 0%;
+  }
+}
+
+@for $i from 1 through 5 {
+  @for $j from 1 through $columns {
+    .col-#{$j} {
+      flex: 0 0 auto;
+      width: percentage(calc($j / $columns));
+    }
+  }
+  @include screen-sm {
+    @for $j from 1 through $columns {
+      .col-sm-#{$j} {
+        flex: 0 0 auto;
+        width: percentage(calc($j / $columns));
+      }
+    }
+  }
+  @include screen-md {
+    @for $j from 1 through $columns {
+      .col-md-#{$j} {
+        flex: 0 0 auto;
+        width: percentage(calc($j / $columns));
+      }
+    }
+  }
+  @include screen-lg {
+    @for $j from 1 through $columns {
+      .col-lg-#{$j} {
+        flex: 0 0 auto;
+        width: percentage(calc($j / $columns));
+      }
+    }
+  }
+  @include screen-xl {
+    @for $j from 1 through $columns {
+      .col-xl-#{$j} {
+        flex: 0 0 auto;
+        width: percentage(calc($j / $columns));
+      }
+    }
+  }
+}

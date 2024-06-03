@@ -1,0 +1,35 @@
+{
+  "name": "flexicss",
+  "version": "1.0.0",
+  "description": "Lightweight framework for responsive websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhmd1619/flexicss.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "framework",
+    "bootstrap",
+    "tailwind",
+    "flexicss",
+    "flex",
+    "design",
+    "html",
+    "js"
+  ],
+  "author": "mhmd1619",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhmd1619/flexicss/issues"
+  },
+  "homepage": "https://github.com/mhmd1619/flexicss#readme",
+  "dependencies": {
+    "sass": "^1.77.2"
+  }
+}
