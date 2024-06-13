@@ -1,4 +1,4 @@
-# FlexiCSS
+# FL-css (Flex & Lightweight Framework)
 
 Lightweight css framework that makes the first step for you, by some essentials:
 
@@ -12,16 +12,16 @@ Lightweight css framework that makes the first step for you, by some essentials:
 - Via npm:
 
 ```
-npm install flexicss
+npm install FL-css
 ```
 
-then import flexicss.css / flexicss.min.css to the main file of your project.
+then import flcss.css / flcss.min.css to the main file of your project.
 
 - Via source:
 
-Just download the flexicss.css / flexicss.min.css from dist folder.
+Just download the flcss.css / flcss.min.css from dist folder.
 
-then import flexicss.css / flexicss.min.css to the main file of your project.
+then import flcss.css / flcss.min.css to the main file of your project.
 
 ## Usage
 

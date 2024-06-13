@@ -1,5 +1,5 @@
 {
-  "name": "flexicss",
+  "name": "FL-css",
   "version": "1.0.0",
   "description": "Lightweight framework for responsive websites.",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhmd1619/flexicss.git"
+    "url": "git+https://github.com/mhmd1619/FL-css.git"
   },
   "keywords": [
     "css",
@@ -16,7 +16,7 @@
     "framework",
     "bootstrap",
     "tailwind",
-    "flexicss",
+    "FL-css",
     "flex",
     "design",
     "html",
@@ -25,9 +25,9 @@
   "author": "mhmd1619",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mhmd1619/flexicss/issues"
+    "url": "https://github.com/mhmd1619/FL-css/issues"
   },
-  "homepage": "https://github.com/mhmd1619/flexicss#readme",
+  "homepage": "https://github.com/mhmd1619/FL-css#readme",
   "dependencies": {
     "sass": "^1.77.2"
   }
