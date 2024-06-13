@@ -44,15 +44,15 @@ All classes are available for all screens (xl - lg - md -sm).
 
 ### Flexbox:
 
-| CSS                        | Class                  |
-| -------------------------- | ---------------------- | ------------------ |
-| flex-direction: row        | column...              | flex-direction-row |
-| flex-wrap: wrap            | nowrap...              | flex-wrap-wrap     |
-| justify-content: center... | justify-content-center |
-| align-items: center...     | align-items-center     |
-| align-content: center...   | align-content-center   |
-| align-self: center...      | align-self-center      |
-| order: 1                   | 2...                   | order-1            |
+| CSS                           | Class                  |
+| ----------------------------- | ---------------------- |
+| flex-direction: row column... | flex-direction-row     |
+| flex-wrap: wrap nowrap...     | flex-wrap-wrap         |
+| justify-content: center...    | justify-content-center |
+| align-items: center...        | align-items-center     |
+| align-content: center...      | align-content-center   |
+| align-self: center...         | align-self-center      |
+| order: 1 2...                 | order-1                |
 
 ### Spacing:
 
