@@ -20,6 +20,7 @@ body {
   }
   button {
     cursor: pointer;
+    appearance: none;
   }
   img,
   video {
@@ -27,13 +28,13 @@ body {
     max-width: 100%;
     height: auto;
   }
-  section {
-    min-height: 100vh;
-  }
   abbr[title] {
     text-decoration: none;
   }
   input[type="submit"] {
     cursor: pointer;
+  }
+  input {
+    appearance: none;
   }
 }

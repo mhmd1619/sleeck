@@ -157,7 +157,7 @@ $spaces: (
 );
 
 @each $class, $property in $spaces {
-  @for $i from 0 through 30 {
+  @for $i from 0 through 50 {
     @if $class == "mx" {
       .#{$class}-#{$i} {
         #{$property}: 0 #{calc($i / 10) + rem} !important;
@@ -185,7 +185,7 @@ $spaces: (
 @each $breakpoint, $width in $breakpoints {
   @media (min-width: $width) {
     @each $class, $property in $spaces {
-      @for $i from 0 through 30 {
+      @for $i from 0 through 50 {
         @if $class == "mx" {
           .#{$breakpoint}-#{$class}-#{$i} {
             #{$property}: 0 #{calc($i / 10) + rem} !important;
