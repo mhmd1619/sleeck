@@ -1,13 +1,13 @@
 {
   "name": "sleeck",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Lightweight framework for responsive websites.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhmd1619/FL-css.git"
+    "url": "git+https://github.com/mhmd1619/sleeck.git"
   },
   "keywords": [
     "css",
