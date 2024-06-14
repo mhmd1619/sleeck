@@ -1,4 +1,4 @@
-# FL-css (Flex & Lightweight Framework)
+# Sleeck
 
 Lightweight css framework that makes the first step for you, by some essentials:
 
@@ -15,13 +15,13 @@ Lightweight css framework that makes the first step for you, by some essentials:
 npm install FL-css
 ```
 
-then import flcss.css / flcss.min.css to the main file of your project.
+then import sleeck.css / sleeck.min.css to the main file of your project.
 
 - Via source:
 
-Just download the flcss.css / flcss.min.css from dist folder.
+Just download the sleeck.css / sleeck.min.css from dist folder.
 
-then import flcss.css / flcss.min.css to the main file of your project.
+then import sleeck.css / sleeck.min.css to the main file of your project.
 
 ## Usage
 
