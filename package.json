@@ -1,5 +1,5 @@
 {
-  "name": "FL-css",
+  "name": "sleeck",
   "version": "1.0.0",
   "description": "Lightweight framework for responsive websites.",
   "scripts": {
@@ -16,7 +16,7 @@
     "framework",
     "bootstrap",
     "tailwind",
-    "FL-css",
+    "sleeck",
     "flex",
     "design",
     "html",
