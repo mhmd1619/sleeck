@@ -25,9 +25,9 @@
   "author": "mhmd1619",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mhmd1619/FL-css/issues"
+    "url": "https://github.com/mhmd1619/sleeck/issues"
   },
-  "homepage": "https://github.com/mhmd1619/FL-css#readme",
+  "homepage": "https://github.com/mhmd1619/sleeck#readme",
   "dependencies": {
     "sass": "^1.77.2"
   }
