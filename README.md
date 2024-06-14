@@ -12,7 +12,7 @@ Lightweight css framework that makes the first step for you, by some essentials:
 - Via npm:
 
 ```
-npm install FL-css
+npm install sleeck
 ```
 
 then import sleeck.css / sleeck.min.css to the main file of your project.
