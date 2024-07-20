@@ -132,11 +132,7 @@ p {
   flex-wrap: wrap;
 }
 .row > * {
-  display: flex;
   flex: 1 0 0%;
-}
-.row > * > * {
-  flex: 1;
 }
 
 .col-1 {

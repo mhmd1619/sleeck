@@ -51,11 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   & > * {
-    display: flex;
     flex: 1 0 0%;
-    & > * {
-      flex: 1;
-    }
   }
 }
 
