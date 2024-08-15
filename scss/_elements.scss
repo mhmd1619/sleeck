@@ -21,6 +21,8 @@ body {
   button {
     cursor: pointer;
     appearance: none;
+    font-family: inherit;
+    color: inherit;
   }
   img,
   video {
@@ -36,5 +38,11 @@ body {
   }
   input {
     appearance: none;
+    font-family: inherit;
+    color: inherit;
+  }
+  textarea {
+    font-family: inherit;
+    color: inherit;
   }
 }
