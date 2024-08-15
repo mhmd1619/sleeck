@@ -125,7 +125,7 @@ $flexbox: (
 @each $breakpoint, $width in $breakpoints {
   @media (min-width: $width) {
     @for $i from -1 through 5 {
-      .order-#{$breakpoint}-#{$i} {
+      .#{$breakpoint}-order-#{$i} {
         order: $i !important;
       }
     }
