@@ -27,7 +27,7 @@ then import sleeck.css / sleeck.min.css to the main file of your project.
 
 ### Note:
 
-All classes are available for all screens (xl - lg - md -sm).
+All classes are available for all screens (xxl - xl - lg - md -sm).
 
 ### Display:
 
@@ -90,9 +90,9 @@ the range is `0rem,0.1rem,0.2rem....4.8rem,4.9rem,5rem`
 
 Columns are `12`
 
-| xs   | sm      | md      | lg      | xl      |
-| ---- | ------- | ------- | ------- | ------- |
-| col- | col-sm- | col-md- | col-lg- | col-xl- |
+| xs   | sm      | md      | lg      | xl      | xxl      |
+| ---- | ------- | ------- | ------- | ------- | -------- |
+| col- | col-sm- | col-md- | col-lg- | col-xl- | col-xxl- |
 
 ##### Example:
 
