@@ -4,9 +4,11 @@
 .container-full {
   width: 100%;
   margin: 0 auto;
+  padding: 0 0.75rem;
 }
 
 .container,
+.container-xxl,
 .container-xl,
 .container-lg,
 .container-md,
@@ -46,6 +48,16 @@
     max-width: $container-xl;
   }
 }
+@include screen-xxl {
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl,
+  .container {
+    max-width: $container-xxl;
+  }
+}
 
 .row {
   display: flex;
@@ -53,6 +65,10 @@
   & > * {
     flex: 1 0 0%;
   }
+}
+
+.cols-auto {
+  flex: 1 0 auto;
 }
 
 @for $i from 1 through 5 {
@@ -89,6 +105,14 @@
   @include screen-xl {
     @for $j from 1 through $columns {
       .col-xl-#{$j} {
+        flex: 0 0 auto;
+        width: percentage(calc($j / $columns));
+      }
+    }
+  }
+  @include screen-xxl {
+    @for $j from 1 through $columns {
+      .col-xxl-#{$j} {
         flex: 0 0 auto;
         width: percentage(calc($j / $columns));
       }
