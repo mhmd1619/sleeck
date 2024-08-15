@@ -1,6 +1,12 @@
 @use "./variables" as *;
 
 // Breakpoints
+@mixin screen-xxl {
+  @media (min-width: $xxl) {
+    @content;
+  }
+}
+
 @mixin screen-xl {
   @media (min-width: $xl) {
     @content;
